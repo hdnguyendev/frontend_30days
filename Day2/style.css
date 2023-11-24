@@ -21,13 +21,14 @@ body {
 }
 .main {
   display: flex;
+  flex-wrap: wrap;
 }
 .card {
   width: 300px;
   height: 400px;
   background: #242628;
   border-radius: 10px;
-  margin: 120px auto;
+  margin: 30px auto;
   overflow: hidden;
 }
 .card__img {
