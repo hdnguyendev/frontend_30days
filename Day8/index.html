@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 8 - Register Form Validator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="card__title">Register</h1>
+      <form class="card__form">
+        <div class="card__form--control" >
+          <input type="text" id="username" placeholder="Username"/>
+          <span></span>
+          <small></small>
+        </div>
+        <div class="card__form--control">
+          <input type="email" id="email"
+          placeholder="Email"/>
+          <span></span>
+          <small></small>
+        </div>
+        <div class="card__form--control">
+          <input type="password" id="password"
+          placeholder="Password" />
+          <span></span>
+          <small></small>
+        </div>
+        <div class="card__form--control">
+          <input type="password" id="password2"
+          placeholder="Confirm password" />
+          <span></span>
+          <small></small>
+        </div>
+        <input class="card__form--submit" type="submit" value="Submit" id="btnSubmit">
+
+        <div class="card__form--link">
+          <p>Already a member?</p>
+          <a href="#login">Login</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

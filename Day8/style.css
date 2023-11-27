@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #3ca7ee, #9a408f);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card__title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.card__form {
+  padding: 0 40px;
+}
+.card__form--control {
+  position: relative;
+  margin: 40px 0;
+  border-bottom: 2px solid #adadad;
+}
+.card__form--control.success {
+	border-bottom-color: #2691d9;
+}
+
+.card__form--control.error {
+	border-bottom-color: #e74c3c;
+}
+small {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 3px;
+  color: #e74c3c;
+}
+.card__form--control input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background: none;
+}
+
+.card__form--control span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #3ca7ee;
+    transition: 0.3s;
+}
+.card__form--control input:focus ~ span::before {
+	width: 100%;
+}
+
+
+.card__form--submit {
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  padding: 10px 0 ;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  background: #4a97df;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.card__form--submit:hover {
+  background: #1e63a4 ;
+}
+
+.card__form--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+.card__form--link a {
+  text-decoration: none;
+  color: #4a97df;
+  margin-left: 5px;
+}
+.card__form--link a:hover {
+  text-decoration: underline;
+}
+
